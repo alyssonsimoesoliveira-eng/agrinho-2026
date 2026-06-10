@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCity 2050</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🌎 EcoCity 2050</h1>
+        <h2>Agora Forte, Futuro Sustentável</h2>
+
+        <div class="status">
+
+            <p class="ano">
+                📅 Ano: <span id="ano">2025</span>
+            </p>
+
+            <div class="barra">
+                <label>🌳 Meio Ambiente</label>
+                <progress id="ambienteBar" value="50" max="100"></progress>
+                <span id="ambiente">50</span>%
+            </div>
+
+            <div class="barra">
+                <label>💰 Economia</label>
+                <progress id="economiaBar" value="50" max="100"></progress>
+                <span id="economia">50</span>%
+            </div>
+
+            <div class="barra">
+                <label>😊 Felicidade</label>
+                <progress id="felicidadeBar" value="50" max="100"></progress>
+                <span id="felicidade">50</span>%
+            </div>
+
+        </div>
+
+        <div class="acoes">
+
+            <button onclick="escolha('solar')">
+                ☀️ Construir Usina Solar
+            </button>
+
+            <button onclick="escolha('fabrica')">
+                🏭 Construir Fábrica
+            </button>
+
+            <button onclick="escolha('arvores')">
+                🌳 Plantar Árvores
+            </button>
+
+            <button onclick="escolha('transporte')">
+                🚌 Melhorar Transporte Público
+            </button>
+
+        </div>
+
+        <div id="mensagem">
+            Faça sua primeira escolha para construir o futuro.
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
